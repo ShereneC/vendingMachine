@@ -26,10 +26,10 @@
             <div class="col">
                 <div id="app"></div>
                 <h3>Your credit: <span id="credit">...</span></h3>
-                <h3>Total charge: <span id="charge">...</span></h3>
+                <h3>Your change: <span id="change">...</span></h3>
             </div>
             <div class="col bg-primary rounded d-flex justify-content-around" id="items">
-                <button class="btn btn-light mt-2 mb-2" onclick="app.valuesController('soda')">Buy Soda!</button>
+                <button class="btn btn-light mt-2 mb-2" onclick="app.vendingController.giveChange()">Buy Soda!</button>
                 <button class="btn btn-light mt-2 mb-2" onclick="app.valuesController('chips')">Buy Chips!</button>
             </div>
         </div>

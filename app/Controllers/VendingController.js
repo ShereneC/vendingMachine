@@ -5,9 +5,11 @@ import { vendingService } from "../Services/VendingService.js";
 //Private
 function _draw() {
   let credit = ProxyState.money
+  let change = ProxyState.change
   // let template = ''
   // values.forEach(v => template += v.Template)
   document.getElementById("credit").innerHTML = credit.toString()
+  document.getElementById("change").innerHTML = change.toString()
   document.getElementById("app").innerHTML = /*html*/`
   <button className="btn btn-info" onclick="app.vendingController.addQuarter()">Add Money</button>  
 
@@ -23,6 +25,10 @@ export default class VendingController {
 
   addQuarter() {
     vendingService.addQuarter()
+  }
+
+  giveChange() {
+    vendingService.giveChange()
   }
 
 }
