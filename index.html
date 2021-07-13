@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/style/main.css">
+    <link rel="stylesheet" href="assets/style/style.css">
+    <title>vendingMachine</title>
+</head>
+
+<body>
+    <header class="container-fluid">
+        <nav class="navbar navbar-dark navbar-expand bg-dark text-light">
+            <a class="navbar-brand" href="#">
+                <img src="assets/img/logo.png" width="45" height="45" alt="" loading="lazy">
+                <span class="ml-2">Simple Vending Machine</span>
+            </a>
+        </nav>
+    </header>
+    <main class="container">
+        <div class="row justify-content-center">
+            <div class="col">
+                <div id="app"></div>
+                <h3>Your credit: <span id="credit">...</span></h3>
+                <h3>Total charge: <span id="charge">...</span></h3>
+            </div>
+            <div class="col bg-primary rounded d-flex justify-content-around" id="items">
+                <button class="btn btn-light mt-2 mb-2" onclick="app.valuesController('soda')">Buy Soda!</button>
+                <button class="btn btn-light mt-2 mb-2" onclick="app.valuesController('chips')">Buy Chips!</button>
+            </div>
+        </div>
+        </div>
+    </main>
+    <footer class="bg-dark text-light">
+        <div class="text-center">
+            <p><small>Made with Codeworks template</small></p>
+        </div>
+    </footer>
+
+    <script src="app/main.js" type="module"></script>
+</body>
+
+</html>
