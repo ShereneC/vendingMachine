@@ -1,4 +1,5 @@
-import Value from "./Models/Snacks.js"
+import Snack from "./Models/Snack.js"
+import Value from "./Models/Snack.js"
 import { EventEmitter } from "./Utils/EventEmitter.js"
 import { isValidProp } from "./Utils/isValidProp.js"
 
@@ -6,6 +7,10 @@ class AppState extends EventEmitter {
   /** @type {Money[]} */
   money = 0
   change = 0
+  snack = {
+    soda: new Snack('Soda', 1),
+    chips: new Snack('Chips', .75)
+  }
 
 }
 

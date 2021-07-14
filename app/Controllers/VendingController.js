@@ -27,8 +27,8 @@ export default class VendingController {
     vendingService.addQuarter()
   }
 
-  giveChange() {
-    vendingService.giveChange()
+  giveChange(name) {
+    vendingService.giveChange(name)
   }
 
 }

@@ -6,9 +6,9 @@ class VendingService {
     console.log(ProxyState.money)
   }
 
-  giveChange() {
-    ProxyState.change = ProxyState.money - 1
-    ProxyState.money -= ProxyState.change
+  giveChange(name) {
+    ProxyState.change = ProxyState.money - ProxyState.snack[name].price
+    ProxyState.money = 0
     console.log(ProxyState.change)
   }
 }
